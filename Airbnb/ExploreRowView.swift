@@ -3,18 +3,30 @@ import SwiftUI
 struct ExploreRowView: View {
     var body: some View {
         VStack {
-            Rectangle()
-                .frame(height: 320)
+            ExploreImageCarouselView()
                 .clipShape(RoundedRectangle(cornerRadius: 10))
-            VStack {
-                Text("Miami, Florida")
 
-                Text("12 mi away")
+            HStack(alignment: .top) {
+                VStack(alignment: .leading) {
+                    Text("Miami, Florida")
+                        .fontWeight(.semibold)
 
-                Text("Nov 3 - 10")
+                    Text("12 mi away")
+                        .foregroundStyle(.secondary)
 
-                Text("$567")
+                    Text("Nov 3 - 10")
+                        .foregroundStyle(.secondary)
+
+                    Text("$567 ")
+                        .fontWeight(.semibold)
+
+                    + Text("night")
+                }
+                Spacer()
+
+                ExploreRatingView()
             }
+            .font(.footnote)
         }
     }
 }

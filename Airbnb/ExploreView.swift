@@ -4,15 +4,21 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                SearchAndFilterBar()
                 LazyVStack(spacing: 32) {
                     ForEach(0 ..< 5) { item in
-                        ExploreRowView()
-                            .frame(height: 400)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                        NavigationLink(value: item) {
+                            ExploreRowView()
+                        }
                     }
                 }
                 .padding()
             }
+            .navigationTitle("Title")
+            .navigationDestination(
+                for: Int.self,
+                destination: ExploreDetailView.init
+            )
         }
     }
 }
