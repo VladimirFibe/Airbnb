@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029ACC992AE4E41B005A4999 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 029ACC982AE4E41B005A4999 /* banner.png */; };
 		02BEEF072AE2A6E9005C3B43 /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF062AE2A6E9005C3B43 /* SearchAndFilterBar.swift */; };
 		02BEEF092AE37AEB005C3B43 /* ExploreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF082AE37AEB005C3B43 /* ExploreDetailView.swift */; };
 		02BEEF0B2AE37C67005C3B43 /* ExploreImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF0A2AE37C67005C3B43 /* ExploreImageCarouselView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		029ACC962AE4DB10005A4999 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		029ACC982AE4E41B005A4999 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
 		02BEEF062AE2A6E9005C3B43 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		02BEEF082AE37AEB005C3B43 /* ExploreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailView.swift; sourceTree = "<group>"; };
 		02BEEF0A2AE37C67005C3B43 /* ExploreImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreImageCarouselView.swift; sourceTree = "<group>"; };
@@ -45,9 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029ACC972AE4E40A005A4999 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				029ACC982AE4E41B005A4999 /* banner.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		02F65EB82AE22D2300CBF617 = {
 			isa = PBXGroup;
 			children = (
+				029ACC972AE4E40A005A4999 /* img */,
 				029ACC962AE4DB10005A4999 /* README.md */,
 				02F65EC32AE22D2300CBF617 /* Airbnb */,
 				02F65EC22AE22D2300CBF617 /* Products */,
@@ -153,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029ACC992AE4E41B005A4999 /* banner.png in Resources */,
 				02F65ECC2AE22D2400CBF617 /* Preview Assets.xcassets in Resources */,
 				02F65EC92AE22D2400CBF617 /* Assets.xcassets in Resources */,
 			);
