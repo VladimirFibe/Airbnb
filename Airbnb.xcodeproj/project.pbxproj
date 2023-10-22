@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029ACC962AE4DB10005A4999 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		02BEEF062AE2A6E9005C3B43 /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		02BEEF082AE37AEB005C3B43 /* ExploreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailView.swift; sourceTree = "<group>"; };
 		02BEEF0A2AE37C67005C3B43 /* ExploreImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreImageCarouselView.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		02F65EB82AE22D2300CBF617 = {
 			isa = PBXGroup;
 			children = (
+				029ACC962AE4DB10005A4999 /* README.md */,
 				02F65EC32AE22D2300CBF617 /* Airbnb */,
 				02F65EC22AE22D2300CBF617 /* Products */,
 			);

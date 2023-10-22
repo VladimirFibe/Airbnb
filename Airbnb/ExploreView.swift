@@ -15,10 +15,9 @@ struct ExploreView: View {
                 .padding()
             }
             .navigationTitle("Title")
-            .navigationDestination(
-                for: Int.self,
-                destination: ExploreDetailView.init
-            )
+            .navigationDestination(for: Int.self) { item in
+                ExploreDetailView(item: item)
+            }
         }
     }
 }
