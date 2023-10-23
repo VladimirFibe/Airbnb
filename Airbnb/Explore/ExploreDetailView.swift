@@ -139,7 +139,7 @@ struct ExploreDetailView: View {
             }
             .padding(.horizontal)
         }
-        .toolbar(.hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar, .tabBar)
         .ignoresSafeArea()
         .padding(.bottom, 100)
         .overlay(alignment: .bottom) {
