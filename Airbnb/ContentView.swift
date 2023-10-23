@@ -2,7 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ExploreView()
+            TabView {
+                WishListView()
+                ProfileView()
+                ExploreView()
+            }
     }
 }
 
