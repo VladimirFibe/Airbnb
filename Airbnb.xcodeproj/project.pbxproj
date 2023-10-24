@@ -16,6 +16,14 @@
 		02BEEF092AE37AEB005C3B43 /* ExploreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF082AE37AEB005C3B43 /* ExploreDetailView.swift */; };
 		02BEEF0B2AE37C67005C3B43 /* ExploreImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF0A2AE37C67005C3B43 /* ExploreImageCarouselView.swift */; };
 		02BEEF0D2AE3CA3D005C3B43 /* ExploreRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEEF0C2AE3CA3D005C3B43 /* ExploreRatingView.swift */; };
+		02C630AF2AE7B68C006A4383 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630AE2AE7B68C006A4383 /* FirebaseAnalytics */; };
+		02C630B32AE7B68C006A4383 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630B22AE7B68C006A4383 /* FirebaseAnalyticsSwift */; };
+		02C630BB2AE7B68C006A4383 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630BA2AE7B68C006A4383 /* FirebaseAuth */; };
+		02C630C72AE7B68C006A4383 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630C62AE7B68C006A4383 /* FirebaseFirestore */; };
+		02C630CB2AE7B68C006A4383 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630CA2AE7B68C006A4383 /* FirebaseFirestoreSwift */; };
+		02C630E12AE7B68C006A4383 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 02C630E02AE7B68C006A4383 /* FirebaseStorage */; };
+		02C630E52AE7B730006A4383 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02C630E42AE7B730006A4383 /* GoogleService-Info.plist */; };
+		02C630E72AE7B9AD006A4383 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C630E62AE7B9AD006A4383 /* Listing.swift */; };
 		02F65EC52AE22D2300CBF617 /* AirbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F65EC42AE22D2300CBF617 /* AirbnbApp.swift */; };
 		02F65EC72AE22D2300CBF617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F65EC62AE22D2300CBF617 /* ContentView.swift */; };
 		02F65EC92AE22D2400CBF617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F65EC82AE22D2400CBF617 /* Assets.xcassets */; };
@@ -35,6 +43,8 @@
 		02BEEF082AE37AEB005C3B43 /* ExploreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailView.swift; sourceTree = "<group>"; };
 		02BEEF0A2AE37C67005C3B43 /* ExploreImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreImageCarouselView.swift; sourceTree = "<group>"; };
 		02BEEF0C2AE3CA3D005C3B43 /* ExploreRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRatingView.swift; sourceTree = "<group>"; };
+		02C630E42AE7B730006A4383 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02C630E62AE7B9AD006A4383 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		02F65EC12AE22D2300CBF617 /* Airbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F65EC42AE22D2300CBF617 /* AirbnbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbApp.swift; sourceTree = "<group>"; };
 		02F65EC62AE22D2300CBF617 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C630C72AE7B68C006A4383 /* FirebaseFirestore in Frameworks */,
+				02C630B32AE7B68C006A4383 /* FirebaseAnalyticsSwift in Frameworks */,
+				02C630AF2AE7B68C006A4383 /* FirebaseAnalytics in Frameworks */,
+				02C630CB2AE7B68C006A4383 /* FirebaseFirestoreSwift in Frameworks */,
+				02C630BB2AE7B68C006A4383 /* FirebaseAuth in Frameworks */,
+				02C630E12AE7B68C006A4383 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +116,13 @@
 			children = (
 				02F65ED22AE22DFA00CBF617 /* App */,
 				02F65EC62AE22D2300CBF617 /* ContentView.swift */,
+				02C630E62AE7B9AD006A4383 /* Listing.swift */,
 				02ACBD112AE66FB7001A36E0 /* WishListView.swift */,
 				02ACBD0D2AE66519001A36E0 /* ProfileView.swift */,
 				02ACBD0F2AE66DCE001A36E0 /* ProfileRow.swift */,
 				02ACBD0C2AE66507001A36E0 /* Explore */,
 				02F65EC82AE22D2400CBF617 /* Assets.xcassets */,
+				02C630E42AE7B730006A4383 /* GoogleService-Info.plist */,
 				02F65ECA2AE22D2400CBF617 /* Preview Content */,
 			);
 			path = Airbnb;
@@ -142,6 +160,14 @@
 			dependencies = (
 			);
 			name = Airbnb;
+			packageProductDependencies = (
+				02C630AE2AE7B68C006A4383 /* FirebaseAnalytics */,
+				02C630B22AE7B68C006A4383 /* FirebaseAnalyticsSwift */,
+				02C630BA2AE7B68C006A4383 /* FirebaseAuth */,
+				02C630C62AE7B68C006A4383 /* FirebaseFirestore */,
+				02C630CA2AE7B68C006A4383 /* FirebaseFirestoreSwift */,
+				02C630E02AE7B68C006A4383 /* FirebaseStorage */,
+			);
 			productName = Airbnb;
 			productReference = 02F65EC12AE22D2300CBF617 /* Airbnb.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 02F65EB82AE22D2300CBF617;
+			packageReferences = (
+				02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 02F65EC22AE22D2300CBF617 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				029ACC992AE4E41B005A4999 /* banner.png in Resources */,
+				02C630E52AE7B730006A4383 /* GoogleService-Info.plist in Resources */,
 				02F65ECC2AE22D2400CBF617 /* Preview Assets.xcassets in Resources */,
 				02F65EC92AE22D2400CBF617 /* Assets.xcassets in Resources */,
 			);
@@ -204,6 +234,7 @@
 				02F65ED42AE22E4400CBF617 /* ExploreView.swift in Sources */,
 				02ACBD102AE66DCE001A36E0 /* ProfileRow.swift in Sources */,
 				02BEEF0B2AE37C67005C3B43 /* ExploreImageCarouselView.swift in Sources */,
+				02C630E72AE7B9AD006A4383 /* Listing.swift in Sources */,
 				02ACBD0B2AE62372001A36E0 /* DestinationSearchView.swift in Sources */,
 				02BEEF072AE2A6E9005C3B43 /* SearchAndFilterBar.swift in Sources */,
 				02F65EC52AE22D2300CBF617 /* AirbnbApp.swift in Sources */,
@@ -414,6 +445,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.16.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02C630AE2AE7B68C006A4383 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		02C630B22AE7B68C006A4383 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		02C630BA2AE7B68C006A4383 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		02C630C62AE7B68C006A4383 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		02C630CA2AE7B68C006A4383 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		02C630E02AE7B68C006A4383 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C630AD2AE7B68C006A4383 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02F65EB92AE22D2300CBF617 /* Project object */;
 }
